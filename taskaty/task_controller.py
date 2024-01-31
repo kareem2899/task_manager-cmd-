@@ -79,7 +79,7 @@ class task_controller:
         if index <=0 or index > len(tasks):
             print(f'the number{index} does not exist')
             return
-        task[index -1]['done']==True
+        tasks[index -1]['done']==True
         with open(self.file_name,'w')as file:
             for task in tasks:
                 self.add_task(Namespace(**task))
